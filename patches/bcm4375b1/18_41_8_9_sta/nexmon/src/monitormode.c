@@ -215,29 +215,29 @@ path_to_path_to_indirect_call_of_phy_ac_rssi_compute_hook(void *rssi_related, st
     return path_to_path_to_indirect_call_of_phy_ac_rssi_compute_hook2(rssi_related, wrxh, a3, p, wlc);
 }
 
-__attribute__((at(0x231EAA, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta)))
+__attribute__((at(0x23954A, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta)))
 __attribute__((at(0x2170DA, "", CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta)))
 BLPatch(path_to_path_to_indirect_call_of_phy_ac_rssi_compute_hook, path_to_path_to_indirect_call_of_phy_ac_rssi_compute_hook);
 
 __attribute__((naked))
 void
-exit_wlc_recv_18_41_8_9_sta(uint32_t monitor)
+exit_wlc_recv_18_41_8_113_sta(uint32_t monitor)
 {
     asm(
         "cmp r0, #2\n"              // path_to_path_to_indirect_call_of_phy_ac_rssi_compute_hook return value of wlc->monitor in r0
-        "beq 0x23203C\n"            // if wlc->monitor == 2 then quit wlc_recv without further processing p
+        "beq 0x2396BE\n"            // if wlc->monitor == 2 then quit wlc_recv without further processing p
         "ldrb r2, [r6,#0xE]\n"      // overwritten instruction
         "lsls r1, r2, #0x1F\n"      // overwritten instruction
-        "b 0x231EB4\n"              // branch to address after overwritten instructions
+        "b 0x239554\n"              // branch to address after overwritten instructions
     );
 }
 
-__attribute__((at(0x231EB0, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta)))
+__attribute__((at(0x239550, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta)))
 BPatch(exit_wlc_recv_18_41_8_9_sta, exit_wlc_recv_18_41_8_9_sta);
 
 //__attribute__((at(0x2170E0, "", CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta)))
 //BPatch(exit_wlc_recv_18_38_18_sta, exit_wlc_recv_18_38_18_sta);
 
-__attribute__((at(0x265502, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta)))
+__attribute__((at(0x26C87E, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta)))
 __attribute__((at(0x24983E, "", CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta)))
 BLPatch(wlc_okc_attach_hook, wlc_okc_attach_hook);

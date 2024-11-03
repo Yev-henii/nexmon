@@ -52,13 +52,13 @@
     #define AT(CHIPVER, FWVER, ADDR)
 #endif
 
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x1FD9BC)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x201D8C)
 int
 called_by_wlc_ioctl(struct wlc_info *wlc, int cmd, char *arg, int len)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x21803E)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x232E0E)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x23A57A)
 void *
 path_to_path_to_indirect_call_of_phy_ac_rssi_compute(void *rssi_related, void *wrxh, void *a3)
 RETURN_DUMMY
@@ -74,13 +74,13 @@ wlc_ioctl_plus8(void *wlc, int cmd, void *arg, int len, void *wlc_if)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x217010)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x231DE0)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x239480)
 void *
 wlc_recv(void *wlc, void *p)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x183834)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x1845A0)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x1845FC)
 int
 memcpy(void *dst, void *src, int len)
 RETURN_DUMMY
@@ -91,19 +91,19 @@ wlc_iovar_op(void *wlc, char *varname, void *params, int p_len, void *arg, int l
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x1863A0)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x1876A8)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x186E58)
 void *
 pkt_buf_get_skb(void *osh, unsigned int len)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x1863F0)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x187718)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x186EC8)
 void *
 pkt_buf_free_skb(void *osh, void *p, int send)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x1C7DF0)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x1D5CBC)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x1D8154)
 void
 wl_set_copycount_bytes(void *wl, int copycount, int d11rxoffset)
 VOID_DUMMY
@@ -124,7 +124,7 @@ memset(void *dst, int value, int len)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x255A80)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x271C00)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x278C70)
 void *
 wlc_okc_attach(void *wlc)
 RETURN_DUMMY
@@ -135,7 +135,7 @@ osl_mallocz(int size)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x24B894)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x267594)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x26E884)
 void
 wlc_tunables_init(void *tunables, void *pub_cmn, int a3, int a4)
 VOID_DUMMY
@@ -196,7 +196,7 @@ path_to_wl_set_monitor(void *wlc, int value)
 RETURN_DUMMY
 
 AT(CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta, 0x1C9B34)
-AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_9_sta, 0x1D7CF8)
+AT(CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta, 0x1D9DA0)
 int
 wlc_sendctl(void *wlc, void *p, void *qi, void *scb, unsigned int fifo, unsigned int rate_override, char enq_only)
 RETURN_DUMMY

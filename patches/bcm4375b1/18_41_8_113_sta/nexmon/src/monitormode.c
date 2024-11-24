@@ -233,7 +233,7 @@ exit_wlc_recv_18_41_8_113_sta(uint32_t monitor)
 }
 
 __attribute__((at(0x239550, "", CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta)))
-BPatch(exit_wlc_recv_18_41_8_9_sta, exit_wlc_recv_18_41_8_9_sta);
+BPatch(exit_wlc_recv_18_41_8_113_sta, exit_wlc_recv_18_41_8_113_sta);
 
 //__attribute__((at(0x2170E0, "", CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta)))
 //BPatch(exit_wlc_recv_18_38_18_sta, exit_wlc_recv_18_38_18_sta);

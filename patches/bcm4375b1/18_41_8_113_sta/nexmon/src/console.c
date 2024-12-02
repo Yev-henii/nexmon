@@ -147,7 +147,7 @@ printf(const char *fmt, ...)
     return ret;
 }
 
-__attribute__((at(0x89D0, "flashpatch", CHIP_VER_BCM4375b1, FW_VER_18_38_18_sta)))
+__attribute__((at(0x89D0, "flashpatch", CHIP_VER_BCM4375b1, FW_VER_18_41_8_113_sta)))
 __attribute__((naked))
 void
 printf_hook(void)
